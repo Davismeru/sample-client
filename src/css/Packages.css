@@ -1,0 +1,43 @@
+.packages-container {
+  @apply p-5 bg-[rgba(0,0,200,0.05)];
+}
+
+.package-plans h1 {
+  @apply ml-3 text-xl font-semibold text-gray-700 md:text-center;
+}
+
+.package-plans section {
+  @apply flex flex-wrap justify-center;
+}
+
+.package-card {
+  @apply shadow-sm w-full  p-5 rounded-xl bg-white flex flex-col items-center md:basis-[20%] m-3;
+}
+
+.package-card h2 {
+  @apply font-bold text-lg mb-10 text-gray-400 text-center;
+}
+
+.package-icon {
+  @apply text-8xl;
+}
+
+.package-card ul {
+  @apply list-inside;
+}
+
+.package-card li {
+  @apply mb-1;
+}
+
+.package-price {
+  @apply text-xl text-gray-500 border-b pb-5 mb-5;
+}
+
+.package-price span {
+  @apply text-2xl font-bold;
+}
+
+.package-card button {
+  @apply bg-blue-500 text-white px-5 py-2 rounded-lg w-full m-4;
+}

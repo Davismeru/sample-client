@@ -1,0 +1,23 @@
+.checkin-container {
+  @apply p-5;
+}
+
+.welcome-note {
+  @apply text-xl font-semibold text-gray-600 mb-2;
+}
+
+.welcome-note span {
+  @apply text-blue-500 font-semibold;
+}
+
+.days-list {
+  @apply flex flex-wrap items-center;
+}
+
+.days-list section {
+  @apply p-2 w-10 m-1 flex items-center justify-center rounded-md flex-col bg-gray-50;
+}
+
+.days-list .icon {
+  @apply text-3xl;
+}

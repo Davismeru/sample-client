@@ -1,0 +1,19 @@
+.signup-container {
+    @apply flex flex-col items-center justify-center min-h-screen p-5 text-lg relative z-10;
+  }
+  
+  .bg-image {
+    @apply absolute h-full w-full object-cover opacity-40;
+  }
+  
+  .signup-container .logo {
+    @apply w-1/2 z-10 relative;
+  }
+  
+  .form-fields {
+    @apply my-5 relative
+  }
+  
+  .form-fields input{
+      @apply w-full p-2 rounded-md border-b border-gray-300 mb-2 outline-none bg-transparent;
+  }

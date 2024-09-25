@@ -1,0 +1,23 @@
+.nav {
+  @apply flex p-5 items-center justify-between md:shadow-sm md:pr-12 bg-white;
+}
+
+.left-nav {
+  @apply flex items-center gap-2;
+}
+
+.left-nav .alt-logo {
+  @apply w-12;
+}
+
+.right-nav .menubar {
+  @apply w-8 h-8 text-gray-400 cursor-pointer md:hidden;
+}
+
+.right-nav div {
+  @apply flex gap-5 hidden md:flex;
+}
+
+.right-nav div p {
+  @apply text-gray-400 cursor-pointer font-semibold;
+}

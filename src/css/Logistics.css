@@ -1,0 +1,47 @@
+.logistics-container {
+  @apply px-5;
+}
+
+.logistic-details {
+  @apply flex flex-wrap gap-2;
+}
+
+.logistics-header {
+  @apply w-full text-2xl font-bold text-gray-600;
+}
+
+.logistics-card {
+  @apply bg-gray-100 basis-[45%] min-h-48 p-5 rounded-xl text-white flex flex-col relative;
+}
+
+.logistics-card .card-info {
+  @apply absolute top-[65%] left-5;
+}
+
+.logistics-card .card-info span {
+  @apply font-semibold;
+}
+
+.logistic-details .card-1 {
+  @apply bg-violet-500;
+}
+
+.logistic-details .card-2 {
+  @apply bg-blue-500;
+}
+
+.logistic-details .card-3 {
+  @apply bg-indigo-500;
+}
+
+.logistics-card h1 {
+  @apply text-sm mb-1;
+}
+
+.logistics-card h2 {
+  @apply text-xl font-bold mb-5;
+}
+
+.logistics-card h3 {
+  @apply text-sm;
+}
