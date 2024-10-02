@@ -19,5 +19,5 @@
 }
 
 .days-list .icon {
-  @apply text-3xl;
+  @apply text-xl;
 }

@@ -26,7 +26,7 @@ function Signin() {
           setErrorMessage(res?.data?.error);
           setLoading(false);
         } else {
-          localStorage.setItem("token", res?.data);
+          sessionStorage.setItem("token", res?.data);
           setErrorMessage("");
           setLoading(false);
           navigate("/");

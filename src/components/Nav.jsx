@@ -16,7 +16,7 @@ function Nav() {
     errorMessage;
 
   const [userData, setUserData] = useState("");
-  const token = localStorage.getItem("token");
+  const token = sessionStorage.getItem("token");
   useEffect(() => {
     axios
       .post(`${base_api_uri}/checkAuth`, {

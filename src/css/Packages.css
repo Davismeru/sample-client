@@ -1,5 +1,13 @@
 .packages-container {
-  @apply p-5 bg-[rgba(0,0,200,0.05)];
+  @apply p-5 bg-[rgba(0,0,200,0.05)] relative;
+}
+
+.pay-popup {
+  @apply fixed top-0 left-0 h-screen w-full bg-white flex items-center justify-center;
+}
+
+.hide-popup {
+  @apply h-0 hidden w-0 -z-20;
 }
 
 .package-plans h1 {
@@ -15,7 +23,7 @@
 }
 
 .package-card h2 {
-  @apply font-bold text-lg mb-10 text-gray-400 text-center;
+  @apply font-bold text-lg mb-10 text-gray-400 text-center capitalize;
 }
 
 .package-icon {
@@ -23,11 +31,7 @@
 }
 
 .package-card ul {
-  @apply list-inside;
-}
-
-.package-card li {
-  @apply mb-1;
+  @apply text-sm;
 }
 
 .package-price {

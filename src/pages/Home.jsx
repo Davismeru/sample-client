@@ -5,10 +5,10 @@ import { base_api_uri } from "../assets/constants";
 import ErrorComponent from "../components/ErrorComponent";
 import { AuthContext } from "../assets/constants";
 import CheckIn from "../components/CheckIn";
-import '../css/Home.css'
+import "../css/Home.css";
 
 function Home() {
-  const token = localStorage.getItem("token");
+  const token = sessionStorage.getItem("token");
 
   const [errorMessage, setErrorMessage] = useState("");
   const [userData, setUserData] = useState("");

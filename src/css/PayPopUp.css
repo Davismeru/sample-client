@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.popup-container {
+  @apply text-center p-5 md:w-[40%] md:shadow-lg md:shadow-gray-300 md:rounded-lg md:text-sm;
+}
+
+.popup-container img {
+  @apply w-48 mx-auto;
+}
+
+.popup-container h1 span {
+  @apply text-2xl font-bold text-gray-700;
+}
+
+.popup-container h2 {
+  @apply capitalize font-semibold text-gray-500 mb-5;
+}
+.popup-container input {
+  @apply border text-center p-2 rounded-md outline-yellow-300 mb-5;
+}
+
+.popup-container ul {
+  @apply mb-5;
+}
+
+.popup-container button {
+  @apply my-2;
+}
