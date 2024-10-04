@@ -6,9 +6,18 @@ import { base_api_uri } from "../assets/constants";
 function PayPopUp({ selectedPackage, setHidePopup }) {
   const token = sessionStorage.getItem("token");
   const [phoneNo, setPhoneNo] = useState(0);
+
+  // close payments popup functionality
   const closePopup = (e) => {
     e.preventDefault();
     setHidePopup(true);
+  };
+
+  // stk push functionality
+  const handleStk = async (e) => {
+    e.preventDefault();
+    const res = await axios.post(`${base_api_uri}/stk`);
+    console.log(res?.data);
   };
   useEffect(() => {
     axios.post(`${base_api_uri}/checkAuth`, { token }).then((res) => {
@@ -40,7 +49,9 @@ function PayPopUp({ selectedPackage, setHidePopup }) {
           <li>Lorem ipsum dolor.</li>
         </ul>
 
-        <button className="button-1">Confirm</button>
+        <button className="button-1" onClick={(e) => handleStk(e)}>
+          Confirm
+        </button>
         <button onClick={(e) => closePopup(e)}>Cancel</button>
       </form>
     </div>
