@@ -16,8 +16,12 @@ function PayPopUp({ selectedPackage, setHidePopup }) {
   // stk push functionality
   const handleStk = async (e) => {
     e.preventDefault();
-    const res = await axios.post(`${base_api_uri}/stk`);
+    const res = await axios.post(`${base_api_uri}/stk`, {
+      price: selectedPackage.price,
+      phone_no: phoneNo.slice(-9),
+    });
     console.log(res?.data);
+    console.log(selectedPackage);
   };
   useEffect(() => {
     axios.post(`${base_api_uri}/checkAuth`, { token }).then((res) => {
